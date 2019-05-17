@@ -1,0 +1,129 @@
+/*
+	WARNING
+	THIS CSS FILE IS NOT AND SHOULD NOT BE LINKED TO THE INDEX.HTML
+	WE WILL USE THIS FOR COPYING AND PASTING
+
+*/
+
+
+
+/*
+
+	Color Legend
+
+	#dddddd Body-bg ____ rgba(221, 221, 221, 1)
+	#2d2d2d Gray-dark __ rgba(45, 45, 45, 1)
+	#b2b2b2 Gray-mid ___ rgba(178, 178, 178, 1)
+	#f6f6f6 Gray-light _ rgba(246, 246, 246, 1)
+
+	#e73035 Red ________ rgba(231, 48, 53, 1)
+	#f1c828 Yellow _____ rgba(241, 200, 40, 1) 
+	#0c66b9 Blue _______ rgba(12, 102, 185, 1)
+
+	You may want use a CSS pre-processor like Sass or Less in future in order to keep colors as variables
+*/
+
+
+
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* START OF BASIC SETTINGS */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+
+
+/* Default settings for the whole page (child elements of the <body>) */
+body{
+	background-color: #ddd;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px; /* Browsers' default font-size is also 16px in general */
+	line-height: 1.4;
+	margin: 0 0 60px 0; /* Margin only applies to <body>, not to child elements */
+	padding: 0; /* Padding only applies to <body>, not to child elements */
+}
+
+/* Use border-box to not mess with unintiutive width-height calculations */
+/* For more explanation check Week 6 - CSS / Example 2  */
+*, *::before, *::after{
+	box-sizing: border-box;
+}
+
+/* Simply include this class in the parent element of the float:left-right elements */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Quick Reset for headings and paragraph */
+h1, h2, h3, h4, h5, h6, p
+{
+	margin: 0;
+	font-weight: normal;
+}
+
+/* Paragraph with smaller font-size */
+p.small-txt{
+	font-size: 12px;
+}
+
+/* Overriding default <a> colors */
+a, a:visited, a:active{
+	text-decoration: none;
+	color: #0c66b9;
+}
+
+/* Instead of using text-decoration: underline, we can show a dotted border when users hover an <a> */
+a:hover{
+	border-bottom: 1px dotted #0c66b9;
+}
+
+/*Style of code blocks in plain text*/
+code{
+	background-color: rgba(0,0,0,.1);
+	font-family: monospace;
+}
+
+
+/* START OF COLOR HELPERS */
+.bg-color-grey-dark{
+	background-color: #2d2d2d;
+	color: #f6f6f6;
+}
+
+.bg-color-grey-mid{
+	background-color: #b2b2b2;
+	color: #2d2d2d;
+}
+
+.bg-color-grey-light{
+	background-color: #f6f6f6;
+	color: #2d2d2d;
+}
+
+.bg-color-red{
+	background-color: #e73035;
+	color: #f6f6f6;
+}
+
+.bg-color-yellow{
+	background-color: #f1c828;
+	color: #2d2d2d;
+}
+
+.bg-color-blue{
+	background-color: #0c66b9;
+	color: #f6f6f6;
+}
+/* END OF COLOR HELPERS */
+
+
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* END OF BASIC SETTINGS */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */

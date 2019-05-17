@@ -1,0 +1,168 @@
+body{
+	background-color: black;
+	font-family: Helvetica, Arial, sans-serif, 'Roboto', sans-serif;;
+	font-size: 16px; 
+	line-height: 1.4;
+	margin: 0 0 60px 0; 
+	padding: 0; 
+}
+
+*, *::before, *::after{
+	box-sizing: border-box;
+}
+
+/*fonts*/
+
+h1, h2, h3, h4, h5, h6, p
+{
+	margin: 0;
+	font-weight: normal;
+}
+
+/*menu*/
+
+
+h1{
+    font-family: sans-serif;
+    color: yellow;
+  	font-weight: bold;
+    font-size:9vw
+}
+h2{
+ 	font-family: sans-serif;
+  	font-weight: bold;
+	font-size:9vw
+}
+h3{
+  	font-family: sans-serif;
+	font-weight: bold;
+	font-size:9vw
+}
+
+h4{
+    font-family: sans-serif;
+  	color: white;
+  	font-weight: lighter;
+  	font-style: inherit;
+    font-size:9vw
+}
+h5{
+ 	font-family: sans-serif;
+  	font-weight: bold;
+	font-size:9vw
+}
+h6{
+  	font-family: roboto;
+	font-weight: regular;
+	font-style: italic;
+	font-size:9vw
+}
+
+p span 
+{
+    display: block;
+}
+
+a:hover{
+	border-bottom: 1px dotted #0c66b9;
+}
+
+code{
+	background-color: rgba(0,0,0,.1);
+	font-family: monospace;
+}
+
+
+.container {
+  position: relative;
+  text-align: center;
+  background-image: inherit;
+  color: white;
+}
+
+.top-left {
+  position: absolute;
+  text-align: left;
+  padding: 25px 10px 75px 100px;
+  top: 8px;
+  left: -20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.aboutme {
+  float: left;
+  text-align: left;
+
+  font-style: italic;
+  width: 50%;
+  margin-left: 500px;
+  padding: 15px;
+}
+
+
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+#example1 {
+  padding: 30px;
+text-align: left;
+margin-left: 400px;}
+
+
+
+/*gallery		*/
+
+#content {
+    height: 46em;
+margin-top: 0px;}
+
+#left {
+    float: right;
+    width: 40%;
+    max-height:200%;
+    overflow: scroll;
+}
+#middle {
+    float: right;
+    width: 40%;
+    max-height:200%;
+    overflow: scroll;
+}
+#middle2{
+    float: right;
+    width: 70%;
+    max-height:200%;
+    overflow: scroll;
+}
+
+#right {
+    float: left;
+    width: 20%;
+    background-color:#FF0;
+    max-height:0%;
+    overflow: scroll;
+}
+
+/*img edit		*/
+
+.img_work{
+    width: 60%;
+    float: center;
+    margin-left: 30%;
+}
+
+
+.column_img {
+	margin-left: -400px;
+  width: 150%;
+}
